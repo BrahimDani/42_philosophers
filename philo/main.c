@@ -23,20 +23,9 @@ int	main(int argc, char **argv)
 
 		tout les temps sont en miliseconde (usleep * 1000)
 	*/
-	if (check_digit(argv))
-		return (1);
-	if (check_arg(argc, argv))
-		return(1);
-	if (check_action(argc, argv));
+	if (check_argument(argc, argv))
 		return (1);
 	if (argc == 6)
-	{
-		/*
-			ici c'est exactement la meme chose mais les philo ont un nombre de tour pour manger (en gros si je donne ac[6] = 4 il iront graille tous que 4 fois)
-			
-		*/
-	}
-	else if (argc == 5)
 	{
 		/*
 			ici c'est exactement la meme chose mais les philo ont un nombre de tour pour manger (en gros si je donne ac[6] = 4 il iront graille tous que 4 fois)

@@ -12,6 +12,18 @@
 
 #include "philo.h"
 
+
+int	check_argument(int argc, char **argv)
+{
+	if (check_digit(argv))
+		return (1);
+	if (check_arg(argc, argv))
+		return(1);
+	if (check_action(argc, argv));
+		return (1);
+	return (0);
+}
+
 long long int	ft_atoll(const char *str)
 {
 	int				negative;
